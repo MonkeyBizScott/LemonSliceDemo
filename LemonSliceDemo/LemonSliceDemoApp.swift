@@ -1,16 +1,19 @@
 //
 //  LemonSliceDemoApp.swift
 //
-//  Created by Scott on 11/27/25.
+//  Created by Scott on 11/26/25.
 //
 
+import ComposableArchitecture
 import SwiftUI
 
 @main
 struct LemonSliceDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ImageGeneratorView(store: Store(initialState: ImageGenerator.State()) {
+                ImageGenerator()
+              })
         }
     }
 }

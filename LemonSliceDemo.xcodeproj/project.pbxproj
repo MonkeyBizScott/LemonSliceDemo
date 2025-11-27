@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D21B4B8F2ED8F835006E4D4B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D21B4B8E2ED8F835006E4D4B /* Kingfisher */; };
+		D21B4B922ED8F83D006E4D4B /* FalClient in Frameworks */ = {isa = PBXBuildFile; productRef = D21B4B912ED8F83D006E4D4B /* FalClient */; };
+		D21B4B952ED8F849006E4D4B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = D21B4B942ED8F849006E4D4B /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D21B4B712ED8F823006E4D4B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,16 +41,6 @@
 			path = LemonSliceDemo;
 			sourceTree = "<group>";
 		};
-		D21B4B732ED8F823006E4D4B /* LemonSliceDemoTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LemonSliceDemoTests;
-			sourceTree = "<group>";
-		};
-		D21B4B7D2ED8F823006E4D4B /* LemonSliceDemoUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LemonSliceDemoUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +48,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21B4B8F2ED8F835006E4D4B /* Kingfisher in Frameworks */,
+				D21B4B922ED8F83D006E4D4B /* FalClient in Frameworks */,
+				D21B4B952ED8F849006E4D4B /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				D21B4B652ED8F822006E4D4B /* LemonSliceDemo */,
-				D21B4B732ED8F823006E4D4B /* LemonSliceDemoTests */,
-				D21B4B7D2ED8F823006E4D4B /* LemonSliceDemoUITests */,
 				D21B4B642ED8F822006E4D4B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +109,9 @@
 			);
 			name = LemonSliceDemo;
 			packageProductDependencies = (
+				D21B4B8E2ED8F835006E4D4B /* Kingfisher */,
+				D21B4B912ED8F83D006E4D4B /* FalClient */,
+				D21B4B942ED8F849006E4D4B /* ComposableArchitecture */,
 			);
 			productName = LemonSliceDemo;
 			productReference = D21B4B632ED8F822006E4D4B /* LemonSliceDemo.app */;
@@ -129,9 +129,6 @@
 			);
 			dependencies = (
 				D21B4B722ED8F823006E4D4B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D21B4B732ED8F823006E4D4B /* LemonSliceDemoTests */,
 			);
 			name = LemonSliceDemoTests;
 			packageProductDependencies = (
@@ -152,9 +149,6 @@
 			);
 			dependencies = (
 				D21B4B7C2ED8F823006E4D4B /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				D21B4B7D2ED8F823006E4D4B /* LemonSliceDemoUITests */,
 			);
 			name = LemonSliceDemoUITests;
 			packageProductDependencies = (
@@ -195,6 +189,11 @@
 			);
 			mainGroup = D21B4B5A2ED8F822006E4D4B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D21B4B8D2ED8F835006E4D4B /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				D21B4B902ED8F83D006E4D4B /* XCRemoteSwiftPackageReference "fal-swift" */,
+				D21B4B932ED8F849006E4D4B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D21B4B642ED8F822006E4D4B /* Products */;
 			projectDirPath = "";
@@ -550,6 +549,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D21B4B8D2ED8F835006E4D4B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.2;
+			};
+		};
+		D21B4B902ED8F83D006E4D4B /* XCRemoteSwiftPackageReference "fal-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/fal-ai/fal-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+		D21B4B932ED8F849006E4D4B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.23.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D21B4B8E2ED8F835006E4D4B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21B4B8D2ED8F835006E4D4B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		D21B4B912ED8F83D006E4D4B /* FalClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21B4B902ED8F83D006E4D4B /* XCRemoteSwiftPackageReference "fal-swift" */;
+			productName = FalClient;
+		};
+		D21B4B942ED8F849006E4D4B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D21B4B932ED8F849006E4D4B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D21B4B5B2ED8F822006E4D4B /* Project object */;
 }
