@@ -32,7 +32,7 @@ struct ImageGeneratorView: View {
                         loadingCell(label: statusText)
                             .frame(width: geo.size.width, height: geo.size.width)
                             .clipped()
-                            .cornerRadius(8)
+//                            .cornerRadius(8)
                             .shadow(radius: 4)
                             .transition(.move(edge: .top).combined(with: .opacity))
                     }
@@ -42,7 +42,7 @@ struct ImageGeneratorView: View {
                             .scaledToFill()
                             .frame(width: geo.size.width, height: geo.size.width)
                             .clipped()
-                            .cornerRadius(8)
+//                            .cornerRadius(8)
                             .shadow(radius: 4)
                             .transition(.move(edge: .top).combined(with: .opacity))
                     }
